@@ -1,0 +1,5 @@
+User-agent: *
+Allow:/
+Sitemap: https://aiactorface.ga/sitemap.xml
+Sitemap: https://www.aiactorface.ga/sitemap.xml
+Sitemap: https://assist-aiface.netlify.app

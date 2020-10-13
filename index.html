@@ -33,9 +33,13 @@
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f8529d7f4ba456c"></script>
-
+        <script
+            type="text/javascript"
+            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f8529d7f4ba456c"
+        ></script>
     </head>
 
     <body>
@@ -60,7 +64,9 @@
                         >
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" id="assist-link" href="http://www.assist.ac.kr/">박지혜 aSSIST</a>
+                        <a class="nav-link" id="assist-link" href="http://www.assist.ac.kr/"
+                            >박지혜 aSSIST</a
+                        >
                     </li>
                 </ul>
             </div>
@@ -122,15 +128,14 @@
                     </div>
                     <p class="text-center">AI가 당신과 닮은 배우를 찾고 있습니다.</p>
                 </div>
-                <h1><img class="result-picture"/></h1>
+                <h1><img class="result-picture" /></h1>
                 <p class="result-message"></p>
                 <div class="mb-2 label-containers" id="label-container"></div>
                 <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
-                
+
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_y99a"></div>
-            
-            
+
                 <div class="pt-3 image-title-wrap">
                     <button type="button" class="remove-image" onclick="window.location.reload();">
                         <span class="try-again-text">다른 사진으로 재시도</span>
@@ -248,7 +253,7 @@
                 prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
                 console.log(prediction[0].className);
                 var resultMessage;
-                var Image ="";
+                var Image = '';
                 if (document.getElementById('gender').checked) {
                     switch (prediction[0].className) {
                         case '원빈':
@@ -256,7 +261,7 @@
                             resultMessage =
                                 '뚜렷한 이목구비와 부드러운 분위기의 소유자, 원빈과 제일 닮으셨네요!';
                             break;
-                    
+
                         case '정우성':
                             resultMessage = '귀티 흐르는 정석미남 정우성과 제일 닮으셨네요!';
                             break;
@@ -268,7 +273,8 @@
                             resultMessage = '개성있는 강한 인상의 배우 송강호와 제일 닮으셨네요!';
                             break;
                         case '설경구':
-                            resultMessage = '압도하는 분위기와 카리스마의 대명사, 설경구와 제일 닮으셨네요!';
+                            resultMessage =
+                                '압도하는 분위기와 카리스마의 대명사, 설경구와 제일 닮으셨네요!';
                             break;
                         case '장동건':
                             resultMessage =
@@ -291,36 +297,43 @@
                                 '청순하면서도 고급스러운 CF 여신 전지현과 제일 닮으셨네요!';
                             break;
                         case '천우희':
-                            resultMessage = '볼수록 빠져드는 매력의 소유자 천우희와 제일 닮으셨네요!';
+                            resultMessage =
+                                '볼수록 빠져드는 매력의 소유자 천우희와 제일 닮으셨네요!';
                             break;
                         case '정유미':
                             resultMessage =
                                 '강인함과 부드러움을 동시에 가진 아름다운 여배우, 정유미와 제일 닮으셨네요!';
                             break;
                         case '서현진':
-                            resultMessage = '사랑스럽고 앙칼진 매력을 가진 서현진과 제일 닮으셨네요!';
+                            resultMessage =
+                                '사랑스럽고 앙칼진 매력을 가진 서현진과 제일 닮으셨네요!';
                             break;
                         case '이솜':
-                            resultMessage = '귀여우면서도 시원한 매력의 소유자 이솜과 제일 닮으셨네요!';
+                            resultMessage =
+                                '귀여우면서도 시원한 매력의 소유자 이솜과 제일 닮으셨네요!';
                             break;
                         case '박보영':
                             resultMessage = '사랑스러움 그 자체! 박보영과 제일 닮으셨네요!';
                             break;
                         case '라미란':
-                            resultMessage = '어떤 이미지든 소화 가능한 배우 라미란과 제일 닮으셨네요!';
+                            resultMessage =
+                                '어떤 이미지든 소화 가능한 배우 라미란과 제일 닮으셨네요!';
                             break;
                         case '김태리':
-                            resultMessage = '고급스럽고 귀티나는 매력을 가진 김태리와 제일 닮으셨네요!';
+                            resultMessage =
+                                '고급스럽고 귀티나는 매력을 가진 김태리와 제일 닮으셨네요!';
                             break;
                         case '김고은':
-                            resultMessage = '우아하고 깨끗한 이미지의 대명사 김고은과 제일 닮으셨네요!';
+                            resultMessage =
+                                '우아하고 깨끗한 이미지의 대명사 김고은과 제일 닮으셨네요!';
                             break;
                         case '한효주':
                             resultMessage =
                                 '압도적인 아우라와 단아한 고급스러움을 소유한 한효주와 제일 닮으셨네요!';
                             break;
                         case '서예지':
-                            resultMessage = '예쁜 눈웃음과 단아한 매력을 가진 대세 배우 서예지와 제일 닮으셨네요!';
+                            resultMessage =
+                                '예쁜 눈웃음과 단아한 매력을 가진 대세 배우 서예지와 제일 닮으셨네요!';
                             break;
                         case '손예진':
                             resultMessage = '청순의 대가, 손예진과 제일 닮으셨네요!';
@@ -348,7 +361,7 @@
                     if (prediction[i].probability < 0.01) {
                         break;
                     } else {
-                       labelContainer.childNodes[i].innerHTML =
+                        labelContainer.childNodes[i].innerHTML =
                             prediction[i].className +
                             ' : ' +
                             prediction[i].probability.toFixed(2) * 100 +
