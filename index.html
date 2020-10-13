@@ -14,25 +14,23 @@
             crossorigin="anonymous"
         />
 
-        <title>연예인 닮은꼴 테스트</title>
+        <title>배우 닮은꼴 테스트</title>
         <meta name="title" content="연예인 닮은꼴 테스트" />
         <meta name="subject" content="얼굴로 보는 인공지능 닮은꼴 테스트, 나와 닮은 연예인은??" />
         <meta
             name="keywords"
-            content="연예인 닮은꼴 테스트, 인공지능 연예인상 테스트, 연예인상, 연예인상 테스트, 나랑 닮은 연예인, 얼굴로 보는 연예은 닮은꼴, 얼굴, similar celebrity"
+            content="배우 닮은꼴 테스트, 연예은 닮은꼴 테스트, 인공지능 연예인상 테스트, 연예인상, 연예인상 테스트, 나랑 닮은 연예인, 얼굴로 보는 연예은 닮은꼴, 얼굴, similar celebrity"
         />
         <meta name="author" content="박지혜" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="canonical" href="" />
-        <meta property="og:url" content="" />
+        <link rel="canonical" href="assist-aiface.netlify.app" />
+        <meta property="og:url" content="assist-aiface.netlify.app" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="연예인 닮은꼴 테스트" />
+        <meta property="og:title" content="배우 닮은꼴 테스트" />
         <meta
             property="og:description"
-            content="당신은 어떤 연예인과 닮았을까요? 나와 닮은 연예인상을 찾아보세요! 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 닮은 연예인을 매칭해드립니다. 회원가입도 필요없이 바로 확인해보세요. 사진 데이터는 그 어디에도 전송되지 않습니다. 나는 원빈? 장동건? 어떤 이미지일까요? 나와 닮은 연예인을 찾을 수 있습니다."
+            content="당신은 어떤 배우와 닮았을까요? 나와 닮은 배우를 찾아보세요! 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 닮은 연예인을 매칭해드립니다. 회원가입도 필요없이 바로 확인해보세요. 사진 데이터는 그 어디에도 전송되지 않습니다. 나는 원빈? 장동건? 어떤 이미지일까요? 나와 닮은 연예인을 찾을 수 있습니다. 당신은 일상 속 김태희? 강동원? 장동건? 한 번 확인해보세요!"
         />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -44,7 +42,7 @@
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-light nav-distance">
-            <a class="navbar-brand" href="#">연예인 닮은꼴 테스트</a>
+            <a class="navbar-brand" href="#">배우 닮은꼴 테스트</a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -60,7 +58,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#"
-                            >연예인 닮은꼴 테스트 <span class="sr-only">(current)</span></a
+                            >배우 닮은꼴 테스트 <span class="sr-only">(current)</span></a
                         >
                     </li>
                     <li class="nav-item active">
@@ -74,6 +72,10 @@
         <section class="section">
             <h1 class="mt-5 pt-5 title">인공지능 연예인 닮은꼴 테스트</h1>
             <h2 class="subtitle">"나는 어떤 배우와 닮았을까?"</h2>
+            <h2 class="sr-only">나는 어떤 한국배우와 닮았을까? 나의 동물상 찾기를 해보세요!</h2>
+        <h3 class="sr-only">한국의 대표 배우들 사진 데이터로 학습한 인공지능이 나의 얼굴로 닮은 연예인을 찾아드립니다.</h3>
+        <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
+        <p class="sr-only">얼굴로 보는 한국 배우 닮은꼴 테스트, 나와 닮은 배우를 찾아보세요! 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 닮은 배우와 얼굴 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 강동원? 공효진? 김태희? 당신이 좋아하는 배우가 당신의 얼굴고 비슷할 수 도 있습니다! 테스트를 통해 확인해보세요.</p>
         </section>
         <section class="assist">
             <div class="mt-5 assist-cover d-flex flex-row-reverse">
@@ -128,7 +130,6 @@
                     </div>
                     <p class="text-center">AI가 당신과 닮은 배우를 찾고 있습니다.</p>
                 </div>
-                <h1><img class="result-picture" /></h1>
                 <p class="result-message"></p>
                 <div class="mb-2 label-containers" id="label-container"></div>
                 <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
@@ -194,7 +195,6 @@
 
                         $('.file-upload-image').attr('src', e.target.result);
                         $('.file-upload-content').show();
-                        $('.result-picture').show();
 
                         $('.image-title').html(input.files[0].name);
                     };
@@ -241,9 +241,10 @@
                 maxPredictions = model.getTotalClasses();
                 labelContainer = document.getElementById('label-container');
                 for (let i = 0; i < maxPredictions; i++) {
-                    // and class labels
-                    labelContainer.appendChild(document.createElement('div'));
-                }
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(element);
+            }
             }
 
             async function predict() {
@@ -252,7 +253,7 @@
                 const prediction = await model.predict(image, false);
                 prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
                 console.log(prediction[0].className);
-                var resultMessage;
+                var resultMessage, resultExplain;
                 var Image = '';
                 if (document.getElementById('gender').checked) {
                     switch (prediction[0].className) {
@@ -260,113 +261,142 @@
                             Image = "<img src='img/cwh.jpg' width='10' height='10' />";
                             resultMessage =
                                 '뚜렷한 이목구비와 부드러운 분위기의 소유자, 원빈과 제일 닮으셨네요!';
+                            resultExplain = "당신은 언제나 커피같은 분위기와 눈에 띄는 외모로 주목을 받습니다. 조용한 듯한 카리스마와 모든 사람들의 호감을 사는 장점을 가지고 있군요."
                             break;
 
                         case '정우성':
                             resultMessage = '귀티 흐르는 정석미남 정우성과 제일 닮으셨네요!';
+                            resultExplain = "당신은 거울을 보면서 매일 뿌듯함을 느끼겠군요! 온화하고 친해지고 싶은 외모를 가졌지만, 동시에 뭔가 모를 포스로 사람들이 함부로 대하지 못합니다."
                             break;
                         case '강동원':
                             resultMessage =
                                 '얼굴도 비율도 지켜주고 싶은 남자 강동원과 제일 닮으셨네요!';
+                            resultExplain = "당신은 천상계의 비율! 멀리서봐도, 가까이에서 봐도 호감형 그 자체인 당신은 어느 자리에서든 주목을 받고 사람들과 쉽게 어울립니다."
                             break;
                         case '송강호':
                             resultMessage = '개성있는 강한 인상의 배우 송강호와 제일 닮으셨네요!';
+                            resultExplain = "사람들은 당신의 강하고 매력적인 눈빛에 호감을 느끼게 됩니다. 강해보이지만 카리스마 속에서 다정다감한 모습을 통해 사로잡는 매력이 있군요!"
                             break;
                         case '설경구':
                             resultMessage =
                                 '압도하는 분위기와 카리스마의 대명사, 설경구와 제일 닮으셨네요!';
+                            resultExplain = "당신은 무엇이든 열심히 하는 성실한 인상을 가지고 있습니다. 근면함과 강인함을 나타내는 당신의 분위기는 직장에서 사람들에게 존경심을 불러오는군요!"
                             break;
                         case '장동건':
                             resultMessage =
                                 '조각상인가, 사람인가? 정석 조각상 장동건과 제일 닮으셨네요!';
+                            resultExplain = "당신은 차가워보이지만 웃을 땐 다정해보이는 반전매력을 가지고 있습니다. 다가가기 어려운 번듯한 외모에도 사람들과 친하게 지낼 수 있는 이유 중 하나이지요."
                             break;
                         case '곽도원':
                             resultMessage = '푸근한 카리스마 매력을 가진 곽도원과 제일 닮으셨네요!';
+                            resultExplain = "당신은 다른 사람들에게 편안함과 안정감을 심어주는 인상을 가지고 있습니다. 따라서 어디에서든 신뢰를 얻으며, 당신에게 의지하는 사람도 많습니다."
                             break;
                         default:
                             resultMessage = '알 수 없음';
+                             resultExplain = ""
                     }
                 } else {
                     switch (prediction[0].className) {
                         case '김태희':
                             resultMessage =
                                 '압도적인 미모와 분위기를 가진 여신 김태희와 제일 닮으셨네요!';
+                            resultExplain = "당신의 미모는 말로 표현할 수 없을 정도입니다. 아름답지만, 동시에 따뜻한 눈빛을 가지고 있어 사람들에게 인기가 많은 인상입니다."
                             break;
                         case '전지현':
                             resultMessage =
                                 '청순하면서도 고급스러운 CF 여신 전지현과 제일 닮으셨네요!';
+                            resultExplain = "당신을 볼 떄 사람들은 청순함과 함부로 대할 수 없는 짙은 아우라를 동시에 느낍니다. 처음에는 접근하기 어렵지만, 알고보면 누구보다 환한 미소를 가지고 있는 당신은 모두의 부러움을 삽니다."
                             break;
                         case '천우희':
                             resultMessage =
                                 '볼수록 빠져드는 매력의 소유자 천우희와 제일 닮으셨네요!';
+                            resultExplain = "사람들은 당신을 만나면 만날수록 당신의 매력에 빠져듭니다. 사랑스러움과 엉뚱하면서도 창의적인 인상의 당신은 마치 블랙홀처럼 사람을 끌어들이는군요!"
                             break;
                         case '정유미':
                             resultMessage =
                                 '강인함과 부드러움을 동시에 가진 아름다운 여배우, 정유미와 제일 닮으셨네요!';
+                            resultExplain = "당신은 정직하고 다소 딱딱해보이기도 하지만, 동시에 따뜻한 인상도 지니고 있어 신뢰를 쉽게 얻습니다. 누구에게나 솔직하게 다가 갈듯한 인상은 매우 큰 호감으로 작용합니다."
                             break;
                         case '서현진':
                             resultMessage =
                                 '사랑스럽고 앙칼진 매력을 가진 서현진과 제일 닮으셨네요!';
+                            resultExplain = "당신은 마치 고양이 같은 인상을 가지고 있습니다. 깍쟁이처럼 아름다운 외모와 함께 미워할 수 없는 사랑스러움을 흘리는 당신은 장소와 상관없이 사랑을 받는군요!"
                             break;
                         case '이솜':
                             resultMessage =
                                 '귀여우면서도 시원한 매력의 소유자 이솜과 제일 닮으셨네요!';
+                            resultExplain = "시크보이면서도 귀여워 보이는 당신을 보며 사람들은 친해지고 싶어합니다. 시원시원한 인상 덕에 사람들을 끌어들이는 당신, 쿨한 매력까지 가지고 있어 좋겠군요!"
                             break;
                         case '박보영':
                             resultMessage = '사랑스러움 그 자체! 박보영과 제일 닮으셨네요!';
+                            resultExplain = "당신을 빼놓고 러블리를 논할 수는 없습니다. 어딜 가든 귀여움과 사랑을 독차지하는 당신! 인상도 반듯해 직장 내에서 조직의 분위기 메이커가 자연스럽게 되곤 합니다."
                             break;
                         case '라미란':
                             resultMessage =
                                 '어떤 이미지든 소화 가능한 배우 라미란과 제일 닮으셨네요!';
+                            resultExplain = "사람들은 당신을 보며 왠지 모를 편안함을 느낍니다. 누구보다 따뜻한 웃음을 지니고 있지만, 때로는 차갑게, 도도하게, 귀엽게 변신하기도 하는 당신은 최고의 인상을 가지고 있습니다."
                             break;
                         case '김태리':
                             resultMessage =
                                 '고급스럽고 귀티나는 매력을 가진 김태리와 제일 닮으셨네요!';
+                            resultExplain = "귀족처럼 고급스러운 외모를 가진 당신에게 때때로 사람들은 다가가기 어려워합니다. 하지만 당신의 우아한 이미지 덕에 사람들은 금방 매혹당하고는 합니다."
                             break;
                         case '김고은':
                             resultMessage =
                                 '우아하고 깨끗한 이미지의 대명사 김고은과 제일 닮으셨네요!';
+                            resultExplain = "당신의 깔끔하고 퓨어한 분위기 덕에 당신과 함께 있는 사람들은 기분이 저절로 좋아집니다. 아름다운 미소까지 가지고 있는 당신, 다른 사람에게서는 쉽게 찾아볼 수 없는 매력을 지니고 있습니다."
                             break;
                         case '한효주':
                             resultMessage =
                                 '압도적인 아우라와 단아한 고급스러움을 소유한 한효주와 제일 닮으셨네요!';
+                            resultExplain = "지금이 조선시대라면 당신은 중전으로 간택될만큼 압도적인 분위기와 단아한 인상을 가지고 있습니다. 가을같은 당신은 저절로 주위에 많은 사람들이 불러모으겠군요"
                             break;
                         case '서예지':
                             resultMessage =
                                 '예쁜 눈웃음과 단아한 매력을 가진 대세 배우 서예지와 제일 닮으셨네요!';
+                            resultExplain = "당신은 거부할 수 없는 짙은 매력의 소유자입니다. 흔히 당신에게 접근하기 어려워하는 사람들도 당신의 아름다운 눈웃음을 보면 친해지고 싶어합니다."
                             break;
                         case '손예진':
                             resultMessage = '청순의 대가, 손예진과 제일 닮으셨네요!';
+                            resultExplain = "당신은 자연스럽게 사람들의 보호본능을 자극합니다. 청순하고 반듯한 외모 덕에 사람들은 당신에게 적대감을 잘 두지 못합니다. 봄 같은 인상을 가진 당신은 부모님께 감사인사를 드려야합니다."
                             break;
                         case '한지민':
                             resultMessage = '아름다운 웃음을 가진 배우 한지민과 제일 닮으셨네요!';
+                            resultExplain = "토끼같이 동그랗고 아름다운 눈을 가진 당신. 웃을 때마다 밝고 환한 당신의 인상을 보고 많은 사람들은 행복을 느낍니다. 들꽃 같은 매력을 가진 당신은 걸어다니는 힐러군요."
                             break;
                         case '이다희':
                             resultMessage = '고급스러운 카리스마를 가진 이다희와 제일 닮으셨네요!';
+                            resultExplain = "모두가 인정하는 천상의 비율을 가진 당신. 누구나 부러워하는 카리스마와 아름다움을 동시에 겸비하고 있습니다. 흔히 사람들은 당신의 카리스마에 압도되어 당신을 존경하겠군요."
                             break;
                         case '공효진':
                             resultMessage = '사랑스러움과 멋짐을 동시에! 공효진과 제일 닮으셨네요!';
+                            resultExplain = "당신은 멋쁨이라는 단어가 어울립니다. 사랑스러움과 청순함, 멋짐을 동시에 가지고 있는 당신의 인상만큼 다재다능한 분위기 덕에 사람들에게 무한한 신뢰를 받겠군요."
                             break;
                         case '정려원':
                             resultMessage = '단아하고 소탈한 매력을 가진 정려원과 제일 닮으셨네요!';
+                            resultExplain = "당신은 꾸미지 않아도 사람들의 눈길을 사로잡습니다. 차분해보이면서도 단아한 당신의 인상 덕에 사람들은 당신에게 의지를 하곤 합니다. 더하지 않아도 아름다운 당신은 마치 자연같네요. "
                             break;
                         default:
-                            resultMessage = '알 수 없음';
+                            resultMessage = '알 수 없음'
+                            resultExplain = ""
                     }
                 }
-                $('.result-picture').html('img/cwh.jpg');
-                $('.result-message').html(resultMessage);
-
+            var title = "<div class='" + prediction[0].className + "-actor-title'>" + resultMessage + "</div>"
+            var explain = "<div class='actor-explain pt-2'>" + resultExplain + "</div>"
+            
+                $('.result-message').html(title + explain);
+                
+                var barWidth;
                 for (let i = 0; i < maxPredictions; i++) {
                     if (prediction[i].probability < 0.01) {
                         break;
                     } else {
-                        labelContainer.childNodes[i].innerHTML =
-                            prediction[i].className +
-                            ' : ' +
-                            prediction[i].probability.toFixed(2) * 100 +
-                            '%';
+                        barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
                     }
+                  var label = "<div class='animal-label d-flex align-items-center'>" + prediction[i].className + "</div>"
+                  var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                labelContainer.childNodes[i].innerHTML = label + bar;
+                    
                 }
             }
         </script>
