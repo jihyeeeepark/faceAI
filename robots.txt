@@ -2,4 +2,8 @@ User-agent: *
 Allow:/
 Sitemap: https://aiactorface.ga/sitemap.xml
 Sitemap: https://www.aiactorface.ga/sitemap.xml
+<<<<<<< HEAD
 Sitemap: https://assist-aiface.netlify.app
+=======
+Sitemap: https://assist-aiface.netlify.app
+>>>>>>> a7c7160666647875ff5c2217372363f988ca0b04
