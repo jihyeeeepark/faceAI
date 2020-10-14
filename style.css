@@ -6,12 +6,12 @@ body {
 }
 
 .file-upload {
-  background-color: #ffffff;
+  background-color: #F2F2F2;
   width: 60%;
   margin: 0 auto;
   padding: 5% 0;
   height: 50%;
-  border-radius : 10px;
+  border-radius : 7%;
 }
 
 .file-upload-content {
@@ -30,15 +30,10 @@ body {
   cursor: pointer;
 }
 
-.image-upload-wrap {
-  margin-top: 20px;
-  border: 7px dashed #060606;
-  position: relative;
-}
-
 .image-dropping,
 .image-upload-wrap:hover {
-  border: 7px dashed #747576;
+  border: 13px dashed #E6E6E6;
+  position: relative;
 }
 
 .image-title-wrap {
@@ -305,7 +300,7 @@ font-size: 2.5rem;
   background-color: rgba(235, 166, 190, 1);
 }
 
-.공효진-box,.정려원-box {
+.공효진-box,.정려원-box,.라미란-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -314,7 +309,7 @@ font-size: 2.5rem;
   width: 100%;
   background-color: #E6E0F8;
 }
-.공효진-bar,.정려원-bar {
+.공효진-bar,.정려원-bar,.라미란-bar {
   position: absolute;
   top: 0;
   left: 0;
