@@ -58,12 +58,17 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#"
-                            >배우 닮은꼴 테스트 <span class="sr-only">(current)</span></a
+                            >배우 닮은꼴 테스트 /  <span class="sr-only">(current)</span></a
                         >
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" id="assist-link" href="http://www.assist.ac.kr/"
-                            >박지혜 aSSIST</a
+                            >박지혜 aSSIST / </a
+                        >
+                    </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" id="assist-link" href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg"
+                            >조코딩 유튜브 채널</a
                         >
                     </li>
                 </ul>
@@ -130,6 +135,10 @@
                     </div>
                     <p class="text-center">AI가 당신과 닮은 배우를 찾고 있습니다.</p>
                 </div>
+                <button type="button" class="result-image" onclick="window.open('https://search.naver.com/search.naver?where=image&sm=tab_jum&query=' + resultimage);">
+                        <span class="result-image-text">사진 보러가기</span>
+                    </button>
+                
                 <p class="ml-5 mr-5 result-message"></p>
                 <div class="mb-2 label-containers" id="label-container"></div>
                 <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
@@ -254,11 +263,10 @@
                 prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
                 console.log(prediction[0].className);
                 var resultMessage, resultExplain;
-                var Image = '';
+               
                 if (document.getElementById('gender').checked) {
                     switch (prediction[0].className) {
                         case '원빈':
-                            Image = "<img src='img/cwh.jpg' width='10' height='10' />";
                             resultMessage =
                                 '뚜렷한 이목구비와 부드러운 분위기의 소유자, 원빈과 제일 닮으셨네요!';
                             resultExplain = "당신은 언제나 커피같은 분위기와 눈에 띄는 외모로 주목을 받습니다. 조용한 듯한 카리스마와 모든 사람들의 호감을 사는 장점을 가지고 있군요."
@@ -362,7 +370,7 @@
                             break;
                         case '한지민':
                             resultMessage = '아름다운 웃음을 가진 배우 한지민과 제일 닮으셨네요!';
-                            resultExplain = "토끼같이 동그랗고 아름다운 눈을 가진 당신. 웃을 때마다 밝고 환한 당신의 인상을 보고 많은 사람들은 행복을 느낍니다. 들꽃 같은 매력을 가진 당신은 걸어다니는 힐러군요."
+                            resultExplain = "토끼같이 동그랗고 아름다운 눈을 가진 당신. 웃을 때마다 밝고 환한 당신의 인상을 보고 많은 사람들은 행복을 느낍니다. 들꽃 같은 매력을 가진 당신은 걸어다니는 힐링이군요."
                             break;
                         case '이다희':
                             resultMessage = '고급스러운 카리스마를 가진 이다희와 제일 닮으셨네요!';
